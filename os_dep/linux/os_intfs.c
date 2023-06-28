@@ -1745,7 +1745,7 @@ int rtw_init_netdev_name(struct net_device *pnetdev, const char *ifname)
 	_adapter			*TargetAdapter = NULL;
 
 	if (padapter->bDongle == 1) {
-		TargetNetdev = rtw_get_same_net_ndev_by_name(pnetdev, "wlan0");
+		TargetNetdev = rtw_get_same_net_ndev_by_name(pnetdev, "wlan1");
 		if (TargetNetdev) {
 			RTW_INFO("Force onboard module driver disappear !!!\n");
 			TargetAdapter = rtw_netdev_priv(TargetNetdev);
